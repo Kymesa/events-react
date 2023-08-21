@@ -1,7 +1,6 @@
 import { messajes } from "../notes";
-function Contens(props) {
-  // eslint-disable-next-line react/prop-types
-  const notes = props.notes;
+// eslint-disable-next-line react/prop-types
+function Contens({ notes }) {
   return (
     <>
       <strong>

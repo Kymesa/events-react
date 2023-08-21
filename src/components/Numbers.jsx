@@ -1,12 +1,11 @@
-function Numbers(props) {
-  // eslint-disable-next-line react/prop-types
-  const leghtNotes = props.notes;
+// eslint-disable-next-line react/prop-types
+function Numbers({ notes }) {
   return (
     <>
       <div className="flex justify-center gap-20 text-2xl text-black">
         <div
           className={`${
-            leghtNotes >= 1
+            notes >= 1
               ? "active__btn rounded-full p-2 px-3"
               : "rounded-full p-2 px-3 bg-gray-300"
           }`}
@@ -15,7 +14,7 @@ function Numbers(props) {
         </div>
         <div
           className={`${
-            leghtNotes >= 2
+            notes >= 2
               ? "active__btn rounded-full p-2 px-3"
               : "rounded-full p-2 px-3 bg-gray-300"
           }`}
@@ -24,7 +23,7 @@ function Numbers(props) {
         </div>
         <div
           className={`${
-            leghtNotes >= 3
+            notes >= 3
               ? "active__btn rounded-full p-2 px-3"
               : "rounded-full p-2 px-3 bg-gray-300"
           }`}
